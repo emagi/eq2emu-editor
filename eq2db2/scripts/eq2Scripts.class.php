@@ -627,7 +627,7 @@ class eq2Scripts
 						<select name="zoneID" onchange="dosub(this.options[this.selectedIndex].value)" class="zone">
 							<option value="?page=scripts&type=spawn">Pick a Zone</option>
 							<option value="?page=scripts&type=spawn&zone=Generic">Generic</option>
-							<?= $this->db->GetZoneOptions('spawn_scripts', 1); ?>
+							<?= $this->db->GetZoneOptions('zones', 1); ?> <!-- won't work with spawn_scripts -->
 						</select>
 					</td>
 				</tr>
