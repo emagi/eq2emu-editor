@@ -3,6 +3,8 @@
 if (!defined('IN_EDITOR'))
 	die("Hack attempt recorded.");
 
+// cookies won't work if we don't use output buffering
+ob_start();
 session_start();
 set_time_limit(900);
 

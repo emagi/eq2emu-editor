@@ -11,3 +11,8 @@ if (env("DEBUG"))
 </script>
 </body>
 </html>
+
+<?php
+// cookies won't work if we don't use output buffering
+ob_end_flush();
+?>
