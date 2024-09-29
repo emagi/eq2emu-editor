@@ -546,7 +546,7 @@ class eq2Cls
 
 	public function CheckAccess($role)
 	{
-		printf("<p>Required: %s, User: %s</p>", $role, $this->user_role);
+		//printf("<p>Required: %s, User: %s</p>", $role, $this->user_role);
 		if($role && ($role & $this->user_role) == $role)
 			return true;
 			
