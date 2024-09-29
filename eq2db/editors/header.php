@@ -91,7 +91,7 @@ if (isset($_COOKIE['eq2db'])) {
 	else
 		$eq2->user_role = 0;
 }
-else {
+else if(defined($eq2->userdata['role'])) {
 	$eq2->user_role = intval($eq2->userdata['role']);
 }
 //print_r($GLOBALS['config']);
