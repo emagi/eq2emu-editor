@@ -93,7 +93,7 @@ if (isset($_COOKIE['eq2db'])) {
 }
 //print_r($GLOBALS['config']);
 //print_r($eq2->role_list);
-print_r($eq2->userdata);
+//print_r($eq2->userdata);
 
 if( $GLOBALS['config']['debug_forms'] && isset($_POST['cmd']) )
 	$eq2->AddDebugForm($_POST);
